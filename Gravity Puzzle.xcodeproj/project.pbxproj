@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E44AAC3D17C5BC0500F6656B /* Asteroid_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */; };
+		E44AAC3E17C5BC0500F6656B /* BackButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */; };
+		E44AAC3F17C5BC0500F6656B /* BlackHole_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */; };
+		E44AAC4017C5BC0500F6656B /* CancelButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1917C5BC0500F6656B /* CancelButton_Placeholder.png */; };
+		E44AAC4117C5BC0500F6656B /* Canon_PlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1A17C5BC0500F6656B /* Canon_PlaceHolder.png */; };
+		E44AAC4217C5BC0500F6656B /* Detector_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1B17C5BC0500F6656B /* Detector_Placeholder.png */; };
+		E44AAC4317C5BC0500F6656B /* Earth_PlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1C17C5BC0500F6656B /* Earth_PlaceHolder.png */; };
+		E44AAC4417C5BC0500F6656B /* Explosion_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1D17C5BC0500F6656B /* Explosion_Placeholder.png */; };
+		E44AAC4517C5BC0500F6656B /* ForceField_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1E17C5BC0500F6656B /* ForceField_Placeholder.png */; };
+		E44AAC4717C5BC0500F6656B /* GravityWell_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2017C5BC0500F6656B /* GravityWell_Placeholder.png */; };
+		E44AAC4817C5BC0500F6656B /* InfoButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2117C5BC0500F6656B /* InfoButton_Placeholder.png */; };
+		E44AAC4917C5BC0500F6656B /* LevelBubble_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2217C5BC0500F6656B /* LevelBubble_Placeholder.png */; };
+		E44AAC4A17C5BC0500F6656B /* LevelBubble_Placeholder.pxm in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2317C5BC0500F6656B /* LevelBubble_Placeholder.pxm */; };
+		E44AAC4B17C5BC0500F6656B /* LockSymbol_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2417C5BC0500F6656B /* LockSymbol_Placeholder.png */; };
+		E44AAC4C17C5BC0500F6656B /* LockSymbol_Placeholder.pxm in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2517C5BC0500F6656B /* LockSymbol_Placeholder.pxm */; };
+		E44AAC4D17C5BC0500F6656B /* Missile_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2617C5BC0500F6656B /* Missile_Placeholder.png */; };
+		E44AAC4E17C5BC0500F6656B /* MissileSplitter_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2717C5BC0500F6656B /* MissileSplitter_Placeholder.png */; };
+		E44AAC4F17C5BC0500F6656B /* NextButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2817C5BC0500F6656B /* NextButton_Placeholder.png */; };
+		E44AAC5017C5BC0500F6656B /* Orbit_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2917C5BC0500F6656B /* Orbit_Placeholder.png */; };
+		E44AAC5117C5BC0500F6656B /* PathLine_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2A17C5BC0500F6656B /* PathLine_Placeholder.png */; };
+		E44AAC5217C5BC0500F6656B /* Planet1_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2B17C5BC0500F6656B /* Planet1_Placeholder.png */; };
+		E44AAC5317C5BC0500F6656B /* Planet2_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2C17C5BC0500F6656B /* Planet2_Placeholder.png */; };
+		E44AAC5417C5BC0500F6656B /* RepeatButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2D17C5BC0500F6656B /* RepeatButton_Placeholder.png */; };
+		E44AAC5517C5BC0500F6656B /* ResetButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2E17C5BC0500F6656B /* ResetButton_Placeholder.png */; };
+		E44AAC5617C5BC0500F6656B /* SettingsButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC2F17C5BC0500F6656B /* SettingsButton_Placeholder.png */; };
+		E44AAC5717C5BC0500F6656B /* SettingsButton_Placeholder.pxm in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3017C5BC0500F6656B /* SettingsButton_Placeholder.pxm */; };
+		E44AAC5817C5BC0500F6656B /* Spaceship_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3117C5BC0500F6656B /* Spaceship_Placeholder.png */; };
+		E44AAC5917C5BC0500F6656B /* SpaceStation_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3217C5BC0500F6656B /* SpaceStation_Placeholder.png */; };
+		E44AAC5A17C5BC0500F6656B /* SpeakerButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3317C5BC0500F6656B /* SpeakerButton_Placeholder.png */; };
+		E44AAC5B17C5BC0500F6656B /* StarEmpty_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3417C5BC0500F6656B /* StarEmpty_Placeholder.png */; };
+		E44AAC5C17C5BC0500F6656B /* StarFieldBackground2_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3517C5BC0500F6656B /* StarFieldBackground2_Placeholder.jpg */; };
+		E44AAC5D17C5BC0500F6656B /* StarFieldBackground_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3617C5BC0500F6656B /* StarFieldBackground_Placeholder.jpg */; };
+		E44AAC5E17C5BC0500F6656B /* StarFilled_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3717C5BC0500F6656B /* StarFilled_Placeholder.png */; };
+		E44AAC5F17C5BC0500F6656B /* Sun_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3817C5BC0500F6656B /* Sun_Placeholder.png */; };
+		E44AAC6017C5BC0500F6656B /* UFOEnemy_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3917C5BC0500F6656B /* UFOEnemy_Placeholder.png */; };
+		E44AAC6117C5BC0500F6656B /* Wormhole_Placeholder.pxm in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3A17C5BC0500F6656B /* Wormhole_Placeholder.pxm */; };
+		E44AAC6217C5BC0500F6656B /* WormholeBlue_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3B17C5BC0500F6656B /* WormholeBlue_Placeholder.png */; };
+		E44AAC6317C5BC0500F6656B /* WormholeRed_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3C17C5BC0500F6656B /* WormholeRed_Placeholder.png */; };
+		E4C5916717C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4C5916617C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg */; };
 		E4DB33C117C1366700DA81B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB33C017C1366700DA81B7 /* UIKit.framework */; };
 		E4DB33C317C1366700DA81B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB33C217C1366700DA81B7 /* Foundation.framework */; };
 		E4DB33C517C1366700DA81B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB33C417C1366700DA81B7 /* CoreGraphics.framework */; };
@@ -18,9 +57,53 @@
 		E4DB33D717C1366800DA81B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DB33D617C1366800DA81B7 /* Default@2x.png */; };
 		E4DB33D917C1366800DA81B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4DB33D817C1366800DA81B7 /* Default-568h@2x.png */; };
 		E4DB33DC17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4DB33DA17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld */; };
+		E4DB33E317C1376500DA81B7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DB33E217C1376500DA81B7 /* MainStoryboard_iPhone.storyboard */; };
+		E4DB33E517C1377600DA81B7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DB33E417C1377600DA81B7 /* MainStoryboard_iPad.storyboard */; };
+		E4DB33E817C139C800DA81B7 /* LevelInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DB33E717C139C800DA81B7 /* LevelInterpreter.m */; };
+		E4DB33ED17C13F3900DA81B7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DB33EC17C13F3900DA81B7 /* HomeViewController.m */; };
+		E4DB33EF17C1446900DA81B7 /* Level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4DB33EE17C1446900DA81B7 /* Level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asteroid_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlackHole_Placeholder.jpg; sourceTree = "<group>"; };
+		E44AAC1917C5BC0500F6656B /* CancelButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CancelButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC1A17C5BC0500F6656B /* Canon_PlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canon_PlaceHolder.png; sourceTree = "<group>"; };
+		E44AAC1B17C5BC0500F6656B /* Detector_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Detector_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC1C17C5BC0500F6656B /* Earth_PlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earth_PlaceHolder.png; sourceTree = "<group>"; };
+		E44AAC1D17C5BC0500F6656B /* Explosion_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Explosion_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC1E17C5BC0500F6656B /* ForceField_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForceField_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2017C5BC0500F6656B /* GravityWell_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GravityWell_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2117C5BC0500F6656B /* InfoButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InfoButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2217C5BC0500F6656B /* LevelBubble_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelBubble_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2317C5BC0500F6656B /* LevelBubble_Placeholder.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = LevelBubble_Placeholder.pxm; sourceTree = "<group>"; };
+		E44AAC2417C5BC0500F6656B /* LockSymbol_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockSymbol_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2517C5BC0500F6656B /* LockSymbol_Placeholder.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = LockSymbol_Placeholder.pxm; sourceTree = "<group>"; };
+		E44AAC2617C5BC0500F6656B /* Missile_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Missile_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2717C5BC0500F6656B /* MissileSplitter_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MissileSplitter_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2817C5BC0500F6656B /* NextButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2917C5BC0500F6656B /* Orbit_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Orbit_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2A17C5BC0500F6656B /* PathLine_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PathLine_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2B17C5BC0500F6656B /* Planet1_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet1_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2C17C5BC0500F6656B /* Planet2_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planet2_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2D17C5BC0500F6656B /* RepeatButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RepeatButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2E17C5BC0500F6656B /* ResetButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ResetButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC2F17C5BC0500F6656B /* SettingsButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3017C5BC0500F6656B /* SettingsButton_Placeholder.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = SettingsButton_Placeholder.pxm; sourceTree = "<group>"; };
+		E44AAC3117C5BC0500F6656B /* Spaceship_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3217C5BC0500F6656B /* SpaceStation_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpaceStation_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3317C5BC0500F6656B /* SpeakerButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpeakerButton_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3417C5BC0500F6656B /* StarEmpty_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmpty_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3517C5BC0500F6656B /* StarFieldBackground2_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StarFieldBackground2_Placeholder.jpg; sourceTree = "<group>"; };
+		E44AAC3617C5BC0500F6656B /* StarFieldBackground_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StarFieldBackground_Placeholder.jpg; sourceTree = "<group>"; };
+		E44AAC3717C5BC0500F6656B /* StarFilled_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFilled_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3817C5BC0500F6656B /* Sun_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sun_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3917C5BC0500F6656B /* UFOEnemy_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UFOEnemy_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3A17C5BC0500F6656B /* Wormhole_Placeholder.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wormhole_Placeholder.pxm; sourceTree = "<group>"; };
+		E44AAC3B17C5BC0500F6656B /* WormholeBlue_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WormholeBlue_Placeholder.png; sourceTree = "<group>"; };
+		E44AAC3C17C5BC0500F6656B /* WormholeRed_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WormholeRed_Placeholder.png; sourceTree = "<group>"; };
+		E4C5916617C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Galaxy_Placeholder.jpg; sourceTree = "<group>"; };
 		E4DB33BD17C1366700DA81B7 /* Gravity Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gravity Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DB33C017C1366700DA81B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E4DB33C217C1366700DA81B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +119,13 @@
 		E4DB33D617C1366800DA81B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E4DB33D817C1366800DA81B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E4DB33DB17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gravity_Puzzle.xcdatamodel; sourceTree = "<group>"; };
+		E4DB33E217C1376500DA81B7 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E4DB33E417C1377600DA81B7 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E4DB33E617C139C800DA81B7 /* LevelInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelInterpreter.h; sourceTree = "<group>"; };
+		E4DB33E717C139C800DA81B7 /* LevelInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelInterpreter.m; sourceTree = "<group>"; };
+		E4DB33EB17C13F3900DA81B7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E4DB33EC17C13F3900DA81B7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E4DB33EE17C1446900DA81B7 /* Level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +143,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E44AAC1517C5BC0500F6656B /* Placeholders */ = {
+			isa = PBXGroup;
+			children = (
+				E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */,
+				E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */,
+				E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */,
+				E44AAC1917C5BC0500F6656B /* CancelButton_Placeholder.png */,
+				E44AAC1A17C5BC0500F6656B /* Canon_PlaceHolder.png */,
+				E44AAC1B17C5BC0500F6656B /* Detector_Placeholder.png */,
+				E44AAC1C17C5BC0500F6656B /* Earth_PlaceHolder.png */,
+				E44AAC1D17C5BC0500F6656B /* Explosion_Placeholder.png */,
+				E44AAC1E17C5BC0500F6656B /* ForceField_Placeholder.png */,
+				E4C5916617C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg */,
+				E44AAC2017C5BC0500F6656B /* GravityWell_Placeholder.png */,
+				E44AAC2117C5BC0500F6656B /* InfoButton_Placeholder.png */,
+				E44AAC2217C5BC0500F6656B /* LevelBubble_Placeholder.png */,
+				E44AAC2317C5BC0500F6656B /* LevelBubble_Placeholder.pxm */,
+				E44AAC2417C5BC0500F6656B /* LockSymbol_Placeholder.png */,
+				E44AAC2517C5BC0500F6656B /* LockSymbol_Placeholder.pxm */,
+				E44AAC2617C5BC0500F6656B /* Missile_Placeholder.png */,
+				E44AAC2717C5BC0500F6656B /* MissileSplitter_Placeholder.png */,
+				E44AAC2817C5BC0500F6656B /* NextButton_Placeholder.png */,
+				E44AAC2917C5BC0500F6656B /* Orbit_Placeholder.png */,
+				E44AAC2A17C5BC0500F6656B /* PathLine_Placeholder.png */,
+				E44AAC2B17C5BC0500F6656B /* Planet1_Placeholder.png */,
+				E44AAC2C17C5BC0500F6656B /* Planet2_Placeholder.png */,
+				E44AAC2D17C5BC0500F6656B /* RepeatButton_Placeholder.png */,
+				E44AAC2E17C5BC0500F6656B /* ResetButton_Placeholder.png */,
+				E44AAC2F17C5BC0500F6656B /* SettingsButton_Placeholder.png */,
+				E44AAC3017C5BC0500F6656B /* SettingsButton_Placeholder.pxm */,
+				E44AAC3117C5BC0500F6656B /* Spaceship_Placeholder.png */,
+				E44AAC3217C5BC0500F6656B /* SpaceStation_Placeholder.png */,
+				E44AAC3317C5BC0500F6656B /* SpeakerButton_Placeholder.png */,
+				E44AAC3417C5BC0500F6656B /* StarEmpty_Placeholder.png */,
+				E44AAC3517C5BC0500F6656B /* StarFieldBackground2_Placeholder.jpg */,
+				E44AAC3617C5BC0500F6656B /* StarFieldBackground_Placeholder.jpg */,
+				E44AAC3717C5BC0500F6656B /* StarFilled_Placeholder.png */,
+				E44AAC3817C5BC0500F6656B /* Sun_Placeholder.png */,
+				E44AAC3917C5BC0500F6656B /* UFOEnemy_Placeholder.png */,
+				E44AAC3A17C5BC0500F6656B /* Wormhole_Placeholder.pxm */,
+				E44AAC3B17C5BC0500F6656B /* WormholeBlue_Placeholder.png */,
+				E44AAC3C17C5BC0500F6656B /* WormholeRed_Placeholder.png */,
+			);
+			path = Placeholders;
+			sourceTree = "<group>";
+		};
 		E4DB33B417C1366700DA81B7 = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +220,13 @@
 		E4DB33C817C1366700DA81B7 /* Gravity Puzzle */ = {
 			isa = PBXGroup;
 			children = (
-				E4DB33D117C1366800DA81B7 /* AppDelegate.h */,
-				E4DB33D217C1366800DA81B7 /* AppDelegate.m */,
+				E4DB33E217C1376500DA81B7 /* MainStoryboard_iPhone.storyboard */,
+				E4DB33E417C1377600DA81B7 /* MainStoryboard_iPad.storyboard */,
 				E4DB33DA17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld */,
+				E4DB33EB17C13F3900DA81B7 /* HomeViewController.h */,
+				E4DB33EC17C13F3900DA81B7 /* HomeViewController.m */,
+				E4DB33E617C139C800DA81B7 /* LevelInterpreter.h */,
+				E4DB33E717C139C800DA81B7 /* LevelInterpreter.m */,
 				E4DB33C917C1366700DA81B7 /* Supporting Files */,
 			);
 			path = "Gravity Puzzle";
@@ -95,6 +235,10 @@
 		E4DB33C917C1366700DA81B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E44AAC1517C5BC0500F6656B /* Placeholders */,
+				E4DB33F017C1447100DA81B7 /* Levels */,
+				E4DB33D117C1366800DA81B7 /* AppDelegate.h */,
+				E4DB33D217C1366800DA81B7 /* AppDelegate.m */,
 				E4DB33CA17C1366700DA81B7 /* Gravity Puzzle-Info.plist */,
 				E4DB33CB17C1366800DA81B7 /* InfoPlist.strings */,
 				E4DB33CE17C1366800DA81B7 /* main.m */,
@@ -104,6 +248,14 @@
 				E4DB33D817C1366800DA81B7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4DB33F017C1447100DA81B7 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB33EE17C1446900DA81B7 /* Level1.txt */,
+			);
+			name = Levels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +313,48 @@
 				E4DB33D517C1366800DA81B7 /* Default.png in Resources */,
 				E4DB33D717C1366800DA81B7 /* Default@2x.png in Resources */,
 				E4DB33D917C1366800DA81B7 /* Default-568h@2x.png in Resources */,
+				E4DB33E317C1376500DA81B7 /* MainStoryboard_iPhone.storyboard in Resources */,
+				E4DB33E517C1377600DA81B7 /* MainStoryboard_iPad.storyboard in Resources */,
+				E4DB33EF17C1446900DA81B7 /* Level1.txt in Resources */,
+				E44AAC3D17C5BC0500F6656B /* Asteroid_Placeholder.png in Resources */,
+				E44AAC3E17C5BC0500F6656B /* BackButton_Placeholder.png in Resources */,
+				E44AAC3F17C5BC0500F6656B /* BlackHole_Placeholder.jpg in Resources */,
+				E44AAC4017C5BC0500F6656B /* CancelButton_Placeholder.png in Resources */,
+				E44AAC4117C5BC0500F6656B /* Canon_PlaceHolder.png in Resources */,
+				E44AAC4217C5BC0500F6656B /* Detector_Placeholder.png in Resources */,
+				E44AAC4317C5BC0500F6656B /* Earth_PlaceHolder.png in Resources */,
+				E44AAC4417C5BC0500F6656B /* Explosion_Placeholder.png in Resources */,
+				E44AAC4517C5BC0500F6656B /* ForceField_Placeholder.png in Resources */,
+				E44AAC4717C5BC0500F6656B /* GravityWell_Placeholder.png in Resources */,
+				E44AAC4817C5BC0500F6656B /* InfoButton_Placeholder.png in Resources */,
+				E44AAC4917C5BC0500F6656B /* LevelBubble_Placeholder.png in Resources */,
+				E44AAC4A17C5BC0500F6656B /* LevelBubble_Placeholder.pxm in Resources */,
+				E44AAC4B17C5BC0500F6656B /* LockSymbol_Placeholder.png in Resources */,
+				E44AAC4C17C5BC0500F6656B /* LockSymbol_Placeholder.pxm in Resources */,
+				E44AAC4D17C5BC0500F6656B /* Missile_Placeholder.png in Resources */,
+				E44AAC4E17C5BC0500F6656B /* MissileSplitter_Placeholder.png in Resources */,
+				E44AAC4F17C5BC0500F6656B /* NextButton_Placeholder.png in Resources */,
+				E44AAC5017C5BC0500F6656B /* Orbit_Placeholder.png in Resources */,
+				E44AAC5117C5BC0500F6656B /* PathLine_Placeholder.png in Resources */,
+				E44AAC5217C5BC0500F6656B /* Planet1_Placeholder.png in Resources */,
+				E44AAC5317C5BC0500F6656B /* Planet2_Placeholder.png in Resources */,
+				E44AAC5417C5BC0500F6656B /* RepeatButton_Placeholder.png in Resources */,
+				E44AAC5517C5BC0500F6656B /* ResetButton_Placeholder.png in Resources */,
+				E44AAC5617C5BC0500F6656B /* SettingsButton_Placeholder.png in Resources */,
+				E44AAC5717C5BC0500F6656B /* SettingsButton_Placeholder.pxm in Resources */,
+				E44AAC5817C5BC0500F6656B /* Spaceship_Placeholder.png in Resources */,
+				E44AAC5917C5BC0500F6656B /* SpaceStation_Placeholder.png in Resources */,
+				E44AAC5A17C5BC0500F6656B /* SpeakerButton_Placeholder.png in Resources */,
+				E44AAC5B17C5BC0500F6656B /* StarEmpty_Placeholder.png in Resources */,
+				E44AAC5C17C5BC0500F6656B /* StarFieldBackground2_Placeholder.jpg in Resources */,
+				E44AAC5D17C5BC0500F6656B /* StarFieldBackground_Placeholder.jpg in Resources */,
+				E44AAC5E17C5BC0500F6656B /* StarFilled_Placeholder.png in Resources */,
+				E44AAC5F17C5BC0500F6656B /* Sun_Placeholder.png in Resources */,
+				E44AAC6017C5BC0500F6656B /* UFOEnemy_Placeholder.png in Resources */,
+				E44AAC6117C5BC0500F6656B /* Wormhole_Placeholder.pxm in Resources */,
+				E44AAC6217C5BC0500F6656B /* WormholeBlue_Placeholder.png in Resources */,
+				E44AAC6317C5BC0500F6656B /* WormholeRed_Placeholder.png in Resources */,
+				E4C5916717C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +368,8 @@
 				E4DB33CF17C1366800DA81B7 /* main.m in Sources */,
 				E4DB33D317C1366800DA81B7 /* AppDelegate.m in Sources */,
 				E4DB33DC17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld in Sources */,
+				E4DB33E817C139C800DA81B7 /* LevelInterpreter.m in Sources */,
+				E4DB33ED17C13F3900DA81B7 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +486,7 @@
 				E4DB33E117C1366800DA81B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
