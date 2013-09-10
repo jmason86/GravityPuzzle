@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E443E54317CC6F3F00B754F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E443E54217CC6F3F00B754F7 /* QuartzCore.framework */; };
 		E44AAC3D17C5BC0500F6656B /* Asteroid_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */; };
 		E44AAC3E17C5BC0500F6656B /* BackButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */; };
 		E44AAC3F17C5BC0500F6656B /* BlackHole_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */; };
@@ -45,7 +46,14 @@
 		E44AAC6117C5BC0500F6656B /* Wormhole_Placeholder.pxm in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3A17C5BC0500F6656B /* Wormhole_Placeholder.pxm */; };
 		E44AAC6217C5BC0500F6656B /* WormholeBlue_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3B17C5BC0500F6656B /* WormholeBlue_Placeholder.png */; };
 		E44AAC6317C5BC0500F6656B /* WormholeRed_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC3C17C5BC0500F6656B /* WormholeRed_Placeholder.png */; };
-		E4C5916717C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4C5916617C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg */; };
+		E44BCC6C17DE4928006133BF /* button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E44BCC6917DE4928006133BF /* button_normal.png */; };
+		E44BCC6D17DE4928006133BF /* button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E44BCC6A17DE4928006133BF /* button_pressed.png */; };
+		E44BCC6E17DE4928006133BF /* mute_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E44BCC6B17DE4928006133BF /* mute_button.png */; };
+		E49F102417CF26EF0094540F /* NewGalaxy_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E49F102317CF26EF0094540F /* NewGalaxy_Placeholder.jpg */; };
+		E49F102917CF28330094540F /* Level5.txt in Resources */ = {isa = PBXBuildFile; fileRef = E49F102517CF28330094540F /* Level5.txt */; };
+		E49F102A17CF28330094540F /* Level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = E49F102617CF28330094540F /* Level4.txt */; };
+		E49F102B17CF28330094540F /* Level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = E49F102717CF28330094540F /* Level3.txt */; };
+		E49F102C17CF28330094540F /* Level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = E49F102817CF28330094540F /* Level2.txt */; };
 		E4DB33C117C1366700DA81B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB33C017C1366700DA81B7 /* UIKit.framework */; };
 		E4DB33C317C1366700DA81B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB33C217C1366700DA81B7 /* Foundation.framework */; };
 		E4DB33C517C1366700DA81B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DB33C417C1366700DA81B7 /* CoreGraphics.framework */; };
@@ -65,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E443E54217CC6F3F00B754F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asteroid_Placeholder.png; sourceTree = "<group>"; };
 		E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton_Placeholder.png; sourceTree = "<group>"; };
 		E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlackHole_Placeholder.jpg; sourceTree = "<group>"; };
@@ -103,7 +112,14 @@
 		E44AAC3A17C5BC0500F6656B /* Wormhole_Placeholder.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wormhole_Placeholder.pxm; sourceTree = "<group>"; };
 		E44AAC3B17C5BC0500F6656B /* WormholeBlue_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WormholeBlue_Placeholder.png; sourceTree = "<group>"; };
 		E44AAC3C17C5BC0500F6656B /* WormholeRed_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WormholeRed_Placeholder.png; sourceTree = "<group>"; };
-		E4C5916617C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Galaxy_Placeholder.jpg; sourceTree = "<group>"; };
+		E44BCC6917DE4928006133BF /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_normal.png; sourceTree = "<group>"; };
+		E44BCC6A17DE4928006133BF /* button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_pressed.png; sourceTree = "<group>"; };
+		E44BCC6B17DE4928006133BF /* mute_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute_button.png; sourceTree = "<group>"; };
+		E49F102317CF26EF0094540F /* NewGalaxy_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewGalaxy_Placeholder.jpg; sourceTree = "<group>"; };
+		E49F102517CF28330094540F /* Level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level5.txt; sourceTree = "<group>"; };
+		E49F102617CF28330094540F /* Level4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level4.txt; sourceTree = "<group>"; };
+		E49F102717CF28330094540F /* Level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level3.txt; sourceTree = "<group>"; };
+		E49F102817CF28330094540F /* Level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level2.txt; sourceTree = "<group>"; };
 		E4DB33BD17C1366700DA81B7 /* Gravity Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gravity Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DB33C017C1366700DA81B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E4DB33C217C1366700DA81B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E443E54317CC6F3F00B754F7 /* QuartzCore.framework in Frameworks */,
 				E4DB33C117C1366700DA81B7 /* UIKit.framework in Frameworks */,
 				E4DB33C317C1366700DA81B7 /* Foundation.framework in Frameworks */,
 				E4DB33C517C1366700DA81B7 /* CoreGraphics.framework in Frameworks */,
@@ -146,6 +163,9 @@
 		E44AAC1517C5BC0500F6656B /* Placeholders */ = {
 			isa = PBXGroup;
 			children = (
+				E44BCC6917DE4928006133BF /* button_normal.png */,
+				E44BCC6A17DE4928006133BF /* button_pressed.png */,
+				E44BCC6B17DE4928006133BF /* mute_button.png */,
 				E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */,
 				E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */,
 				E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */,
@@ -154,8 +174,8 @@
 				E44AAC1B17C5BC0500F6656B /* Detector_Placeholder.png */,
 				E44AAC1C17C5BC0500F6656B /* Earth_PlaceHolder.png */,
 				E44AAC1D17C5BC0500F6656B /* Explosion_Placeholder.png */,
+				E49F102317CF26EF0094540F /* NewGalaxy_Placeholder.jpg */,
 				E44AAC1E17C5BC0500F6656B /* ForceField_Placeholder.png */,
-				E4C5916617C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg */,
 				E44AAC2017C5BC0500F6656B /* GravityWell_Placeholder.png */,
 				E44AAC2117C5BC0500F6656B /* InfoButton_Placeholder.png */,
 				E44AAC2217C5BC0500F6656B /* LevelBubble_Placeholder.png */,
@@ -209,6 +229,7 @@
 		E4DB33BF17C1366700DA81B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E443E54217CC6F3F00B754F7 /* QuartzCore.framework */,
 				E4DB33C017C1366700DA81B7 /* UIKit.framework */,
 				E4DB33C217C1366700DA81B7 /* Foundation.framework */,
 				E4DB33C417C1366700DA81B7 /* CoreGraphics.framework */,
@@ -254,6 +275,10 @@
 			isa = PBXGroup;
 			children = (
 				E4DB33EE17C1446900DA81B7 /* Level1.txt */,
+				E49F102517CF28330094540F /* Level5.txt */,
+				E49F102617CF28330094540F /* Level4.txt */,
+				E49F102717CF28330094540F /* Level3.txt */,
+				E49F102817CF28330094540F /* Level2.txt */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -354,7 +379,14 @@
 				E44AAC6117C5BC0500F6656B /* Wormhole_Placeholder.pxm in Resources */,
 				E44AAC6217C5BC0500F6656B /* WormholeBlue_Placeholder.png in Resources */,
 				E44AAC6317C5BC0500F6656B /* WormholeRed_Placeholder.png in Resources */,
-				E4C5916717C69FAA00B4DCD4 /* Galaxy_Placeholder.jpg in Resources */,
+				E49F102417CF26EF0094540F /* NewGalaxy_Placeholder.jpg in Resources */,
+				E49F102917CF28330094540F /* Level5.txt in Resources */,
+				E49F102A17CF28330094540F /* Level4.txt in Resources */,
+				E49F102B17CF28330094540F /* Level3.txt in Resources */,
+				E49F102C17CF28330094540F /* Level2.txt in Resources */,
+				E44BCC6C17DE4928006133BF /* button_normal.png in Resources */,
+				E44BCC6D17DE4928006133BF /* button_pressed.png in Resources */,
+				E44BCC6E17DE4928006133BF /* mute_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,14 @@
+c5517b27-b645-4532-ae96-af04a56ae24c,1,Gravity Well,113,62,gravity_well.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,false
+baa98777-708e-4f76-9799-661822574521,2,Black Hole,65,121,black_hole.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,false,0.0
+2a7e353f-2c5d-49a1-9842-08328c383aa7,2,Black Hole,345,173,black_hole.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,false,0.0
+5bb99fbc-5254-4dee-983d-f28733038e00,3,Worm Hole,122,198,wormhole_blue.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,122,198,371,301,wormhole_blue.png,wormhole_red.png,0.0,0.0,0.0,0.0
+d1da0010-3475-49be-88da-201376ee84d2,4,Forcefield,73,244,force_field.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0.0
+97b4a04a-3d42-40ad-b5c2-a365c24d69fc,5,Splitter,226,321,splitter.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2,0.0
+f721b3d7-8478-4f3f-9be9-bdd9a53ad130,6,Detector,113,348,detector.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0
+ad31c160-9a56-49ca-bd71-9eff0fc3c0d6,7,Asteroid,245,420,asteroid.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7ee583d9-f5a8-4bb7-a43a-20a61d6b63c3,8,Planet,432,406,planet.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7dfbbb61-b321-48dc-80d0-1e17e1cb88b7,9,Spaceship,100,434,spaceship.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1
+64e8f2a9-35c3-4f7c-874e-5fbe55d5c148,10,UFO,50,503,ufo.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+51fcb4b8-b7d7-4008-b850-81ccab6b8a97,11,Path,172,526,path.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,172,526,396,233,0.0,
+eed6bfdd-32b4-4008-b82b-500f107fcb95,12,Earth,348,544,earth.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1
+c124d867-7637-4c6d-a721-9aa649253e6d,13,Cannon,398,465,cannon.png,true,true,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1

@@ -10,7 +10,9 @@
 
 @interface LevelInterpreter : NSObject
 
-- (void)loadLevelFileFromDisk;
+- (NSArray *)loadLevelFileFromDisk:(NSInteger)levelNumber;
+
+- (NSInteger)numberOfLevels;
 
 @property NSMutableArray *allLevelData;
 

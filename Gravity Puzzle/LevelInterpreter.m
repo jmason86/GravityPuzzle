@@ -12,16 +12,16 @@
 
 @synthesize allLevelData;
 
-- (void)loadLevelFileFromDisk
+- (NSArray *)loadLevelFileFromDisk:(NSInteger)levelNumber
 {
     allLevelData = [[NSMutableArray alloc] init];
     NSString *path = [[NSBundle mainBundle] resourcePath];
     NSFileManager *fileManager = [[NSFileManager alloc] init];
     
-    // Find all level files
+    // Search all files for the desired level
     NSArray *allFiles = [fileManager contentsOfDirectoryAtPath:path error:nil];
     for (NSString *fileName in allFiles) {
-        if ([[fileName pathExtension] isEqualToString:@"txt"]) {
+        if ([fileName isEqualToString:[NSString stringWithFormat:@"%@%i%@", @"Level", levelNumber, @".txt"]]) {
             NSString *fullFilePath = [path stringByAppendingPathComponent:fileName];
             NSString *fileContents = [NSString stringWithContentsOfFile:fullFilePath encoding:NSASCIIStringEncoding error:nil];
             
@@ -31,11 +31,12 @@
                 
                 NSString *levelObjectType = [allComponents objectAtIndex:1];
                 // Make NSDictionary and store each column
-                NSDictionary *rowComponents = [[NSDictionary alloc] initWithObjects:allComponents forKeys:[self createKeysForLevelComponentsForLevelObjectType:levelObjectType]];
-                [allLevelData addObject:rowComponents];
+                NSDictionary *currentLevelObject = [[NSDictionary alloc] initWithObjects:allComponents forKeys:[self createKeysForLevelComponentsForLevelObjectType:levelObjectType]];
+                [allLevelData addObject:currentLevelObject];
             }
         }
     }
+    return allLevelData;
 }
 
 - (NSArray *)createKeysForLevelComponentsForLevelObjectType:(NSString *)levelObjectType
@@ -44,37 +45,37 @@
     
     switch ([levelObjectType integerValue]) {
         case 1: // Gravity well
-            [keys addObject:@"antigravity"];
+            [keys addObject:@"isAntigravity"];
             break;
         case 2: // Black hole
-            [keys addObject:@"antigravity"];
-            [keys addObject:@"bla"];
+            [keys addObject:@"isAntigravity"];
+            [keys addObject:@"eventHorizon"];
             break;
         case 3: // Worm hole
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
-            [keys addObject:@"bla3"];
-            [keys addObject:@"bla4"];
-            [keys addObject:@"bla5"];
-            [keys addObject:@"bla6"];
-            [keys addObject:@"bla7"];
-            [keys addObject:@"bla8"];
-            [keys addObject:@"bla9"];
-            [keys addObject:@"bla10"];
+            [keys addObject:@"entranceX"];
+            [keys addObject:@"entranceY"];
+            [keys addObject:@"exitX"];
+            [keys addObject:@"exitY"];
+            [keys addObject:@"entranceImageFilename"];
+            [keys addObject:@"exitImageFilename"];
+            [keys addObject:@"exitingThroughEntranceSpeed"];
+            [keys addObject:@"exitingThroughEntranceSpeed"];
+            [keys addObject:@"exitSpeed"];
+            [keys addObject:@"exitAngle"];
             break;
         case 4: // Forcefield
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
-            [keys addObject:@"bla3"];
+            [keys addObject:@"height"];
+            [keys addObject:@"width"];
+            [keys addObject:@"permeability"];
             break;
         case 5: // Splitter
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
+            [keys addObject:@"multiplier"];
+            [keys addObject:@"exitAngle"];
             break;
         case 6: // Detector
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
-            [keys addObject:@"bla3"];
+            [keys addObject:@"detectionRadius"];
+            [keys addObject:@"numPulses"];
+            [keys addObject:@"pulseRate"];
             break;
         case 7: // Asteroid
             // Add nothing
@@ -83,33 +84,49 @@
             // Add nothing
             break;
         case 9: // Spaceship
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
+            [keys addObject:@"shipAngle"];
+            [keys addObject:@"numShots"];
             break;
         case 10: // Target
             // Add nothing
             break;
         case 11: // Path
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
-            [keys addObject:@"bla3"];
-            [keys addObject:@"bla4"];
-            [keys addObject:@"bla5"];
-            [keys addObject:@"bla6"];
+            [keys addObject:@"x1"];
+            [keys addObject:@"x2"];
+            [keys addObject:@"y1"];
+            [keys addObject:@"y2"];
+            [keys addObject:@"speed"];
+            [keys addObject:@"objectOnPath"];
             break;
         case 12: // Earth
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
-            [keys addObject:@"bla3"];
+            [keys addObject:@"cannonAngle"];
+            [keys addObject:@"earthRadius"];
+            [keys addObject:@"numShots"];
             break;
         case 13: // Cannon
-            [keys addObject:@"bla1"];
-            [keys addObject:@"bla2"];
+            [keys addObject:@"cannonAngle"];
+            [keys addObject:@"numShots"];
             break;
         default:
             break;
     }
     return keys;
+}
+
+- (NSInteger)numberOfLevels
+{
+    NSString *path = [[NSBundle mainBundle] resourcePath];
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+
+    // Search all files for the desired level
+    NSArray *allFiles = [fileManager contentsOfDirectoryAtPath:path error:nil];
+    NSInteger count = 0;
+    for (NSString *fileName in allFiles) {
+        if ([[fileName pathExtension] isEqualToString:@"txt"]) {
+            count++;
+        }
+    }
+    return count;
 }
 
 @end

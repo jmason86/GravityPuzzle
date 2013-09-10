@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "LevelInterpreter.h"
 
 @interface HomeViewController : UIViewController
-
-@property (strong, nonatomic) IBOutlet UIImageView *galaxyBackgroundImageView;
 
 @end
