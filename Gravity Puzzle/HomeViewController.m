@@ -30,7 +30,7 @@
 	
     // Read in levels
     LevelInterpreter *levelInterpreter = [[LevelInterpreter alloc] init];
-    NSArray *levelData = [levelInterpreter loadLevelFileFromDisk:(NSInteger)1]; // TODO: Change this from 1 to whatever is most relevant
+    //NSArray *levelData = [levelInterpreter loadLevelFileFromDisk:(NSInteger)1]; // TODO: Change this from 1 to whatever is most relevant
     NSInteger numberOfLevels = [levelInterpreter numberOfLevels];
     
     // Create CALayer holding galaxy and all solar systems
@@ -94,6 +94,20 @@
     isSettingsButtonDepressed = NO;
     isSoundMuted = NO; // TODO: Check if vibrate button is switched on for default state
     [self.view addSubview:settingsButton];
+    
+    // Create info button
+    infoButton = [[UIButton alloc] initWithFrame:CGRectMake(screenSize.x - 50, screenSize.y - 40 - 60, 40, 40)];
+    [infoButton addTarget:self action:@selector(infoButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    infoButton.tag = 1;
+    infoButton.alpha = 0.0;
+    [self.view addSubview:infoButton];
+    
+    // Create sound button
+    soundButton = [[UIButton alloc] initWithFrame:CGRectMake(screenSize.x - 50, screenSize.y - 40 - 40 - 60, 40, 40)];
+    [soundButton addTarget:self action:@selector(soundButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    soundButton.tag = 2;
+    soundButton.alpha = 0.0;
+    [self.view addSubview:soundButton];
 }
 
 - (void)rotateGalaxyLayer:(NSTimer *)theTimer
@@ -121,39 +135,28 @@
     if (isSettingsButtonDepressed == NO) {
         isSettingsButtonDepressed = YES;
         
-        infoButton = [[UIButton alloc] initWithFrame:CGRectMake(screenSize.x - 50, screenSize.y - 40 - 60, 40, 40)];
         [infoButton setBackgroundImage:[UIImage imageNamed:@"InfoButton_Placeholder.png"] forState:UIControlStateNormal];
-        [infoButton addTarget:self action:@selector(infoButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        infoButton.tag = 1;
-        infoButton.alpha = 0.0;
-        [self.view addSubview:infoButton];
-        [UIView animateWithDuration:1.0
+        [UIView animateWithDuration:0.2
                               delay:0.0
-                            options: UIViewAnimationCurveEaseInOut
+                            options: UIViewAnimationOptionCurveEaseOut
                          animations:^{infoButton.alpha = 1.0;}
                          completion:nil];
         
-        soundButton = [[UIButton alloc] initWithFrame:CGRectMake(screenSize.x - 50, screenSize.y - 40 - 40 - 60, 40, 40)];
         [soundButton setBackgroundImage:[UIImage imageNamed:@"SpeakerButton_Placeholder.png"] forState:UIControlStateNormal];
-        [soundButton addTarget:self action:@selector(soundButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        soundButton.tag = 2;
-        soundButton.alpha = 0.0;
-        [self.view addSubview:soundButton];
-        [UIView animateWithDuration:1.0
+        [UIView animateWithDuration:0.2
                               delay:0.0
-                            options: UIViewAnimationCurveEaseInOut
+                            options: UIViewAnimationOptionCurveEaseOut
                          animations:^{soundButton.alpha = 1.0;}
                          completion:nil];
     } else {
         isSettingsButtonDepressed = NO;
         for (UIView *subview in [self.view subviews]) {
             if (subview.tag == 1 || subview.tag == 2) {
-                [UIView animateWithDuration:1.0
+                [UIView animateWithDuration:0.2
                                       delay:0.0
-                                    options: UIViewAnimationCurveEaseInOut
+                                    options: UIViewAnimationOptionCurveEaseOut
                                  animations:^{subview.alpha = 0.0;}
                                  completion:nil];
-                //[subview removeFromSuperview];
             }
         }
     }
@@ -172,12 +175,44 @@
     } else {
         [soundButton setBackgroundImage:[UIImage imageNamed:@"SpeakerButton_Placeholder.png"] forState:UIControlStateNormal];
         isSoundMuted = NO;
-    }
+    }
 }
 
+// Any of the solar systems pressed
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    for (UITouch *touch in touches) {
+        CGPoint point = [touch locationInView:self.view];
+        CGPoint point2 = [self.view.layer convertPoint:point toLayer:self.view.layer.superlayer];
+        CALayer *theLayer = [self.view.layer hitTest:point];
+        theLayer.opacity = 0.3;
+    }
 
+    
+    
+    
+    
+    CGPoint point = [[touches anyObject] locationInView:self.view];
+    CALayer *topLayer = self.view.layer;
+    for (CALayer *galaxyLayer in topLayer.sublayers) {
+        for (CALayer *solarSystemLayer in galaxyLayer.sublayers) {
+            CGPoint solarSystemPositionInGalaxy = [solarSystemLayer position];
+            CGPoint solarSystemPositionInView = [solarSystemLayer convertPoint:solarSystemPositionInGalaxy toLayer:topLayer];
+            CGPoint point = [[touches anyObject] locationInView:self.view];
+            CGPoint point2 = [solarSystemLayer convertPoint:point fromLayer:topLayer];
+            if ([solarSystemLayer hitTest:point]) {
+                NSLog(@"solarsystem hit point");
+            }
+            if ([solarSystemLayer hitTest:point2]) {
+                NSLog(@"solarsystem hit point");
+            }
+            solarSystemLayer.opacity = 0.5;
+        }
+    }
 
+}
 
+# pragma mark - Default code blocks
 
 - (void)didReceiveMemoryWarning
 {
