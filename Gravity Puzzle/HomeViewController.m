@@ -8,12 +8,13 @@
 
 #import "HomeViewController.h"
 #import "LevelInterpreter.h"
+#import "LevelSelectionViewController.h"
 
 @interface HomeViewController ()
 {
     NSTimer *timer;
     float rotationAngle;
-    float rotationRate;
+    float rotationPeriod;
     CGPoint screenSize;
     BOOL isSettingsButtonDepressed;
     BOOL isSoundMuted;
@@ -27,11 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    // Read in levels
-    LevelInterpreter *levelInterpreter = [[LevelInterpreter alloc] init];
-    //NSArray *levelData = [levelInterpreter loadLevelFileFromDisk:(NSInteger)1]; // TODO: Change this from 1 to whatever is most relevant
-    NSInteger numberOfLevels = [levelInterpreter numberOfLevels];
+    // Number of galactic regions containing levels
+    int numberOfRegions = 5;
     
     // Create CALayer holding galaxy and all solar systems
     CALayer *galaxyLayer = [CALayer layer];
@@ -39,7 +37,7 @@
     [self.view.layer addSublayer:galaxyLayer];
     galaxyLayer.bounds = CGRectMake(0, 0, self.view.layer.bounds.size.height, self.view.layer.bounds.size.width);
     galaxyLayer.position = CGPointMake(self.view.center.y, self.view.center.x);
-    for (int i = 0; i < numberOfLevels; i++) {
+    for (int i = 0; i < numberOfRegions; i++) {
         CALayer *solarSystemLayer = [CALayer layer];
         solarSystemLayer.contents = (id) [UIImage imageNamed:@"LevelBubble_Placeholder.png"].CGImage;
         [galaxyLayer insertSublayer:solarSystemLayer above:galaxyLayer];
@@ -72,9 +70,11 @@
     }
     
     // Start galaxy spinning
+    /*
     rotationAngle = 0.0;
-    rotationRate = 1.0;
-    timer = [NSTimer scheduledTimerWithTimeInterval:rotationRate target:self selector:@selector(rotateGalaxyLayer:) userInfo:galaxyLayer repeats:YES];
+    rotationPeriod = 5.0;
+    timer = [NSTimer scheduledTimerWithTimeInterval:rotationPeriod target:self selector:@selector(rotateGalaxyLayer:) userInfo:galaxyLayer repeats:YES];
+    */
     
     // Make game title
     UILabel *gameTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
@@ -122,7 +122,7 @@
     animation.fromValue = [NSNumber numberWithFloat:rotationAngle];
     animation.toValue = [NSNumber numberWithFloat:deltaRotationAngle];
     animation.byValue = [NSNumber numberWithFloat:deltaRotationAngle / 10.];
-    animation.duration = rotationRate;
+    animation.duration = rotationPeriod;
     [animation setFillMode:kCAFillModeForwards];
     [animation setRemovedOnCompletion:NO];
     [galaxyLayer addAnimation:animation forKey:@"position"];
@@ -182,35 +182,34 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     for (UITouch *touch in touches) {
-        CGPoint point = [touch locationInView:self.view];
-        CGPoint point2 = [self.view.layer convertPoint:point toLayer:self.view.layer.superlayer];
-        CALayer *theLayer = [self.view.layer hitTest:point];
-        theLayer.opacity = 0.3;
-    }
-
-    
-    
-    
-    
-    CGPoint point = [[touches anyObject] locationInView:self.view];
-    CALayer *topLayer = self.view.layer;
-    for (CALayer *galaxyLayer in topLayer.sublayers) {
-        for (CALayer *solarSystemLayer in galaxyLayer.sublayers) {
-            CGPoint solarSystemPositionInGalaxy = [solarSystemLayer position];
-            CGPoint solarSystemPositionInView = [solarSystemLayer convertPoint:solarSystemPositionInGalaxy toLayer:topLayer];
-            CGPoint point = [[touches anyObject] locationInView:self.view];
-            CGPoint point2 = [solarSystemLayer convertPoint:point fromLayer:topLayer];
-            if ([solarSystemLayer hitTest:point]) {
-                NSLog(@"solarsystem hit point");
+        if (touch != nil) {
+            CGPoint point = [touch locationInView:self.view];
+            CALayer *galaxyLayer = [self.view.layer.sublayers objectAtIndex:0];
+            for (int i = 0; i < [galaxyLayer.sublayers count]; i++) {
+                CALayer *galaxySublayer = [galaxyLayer.sublayers objectAtIndex:i];
+                CGPoint point2 = [self.view.layer convertPoint:point toLayer:galaxyLayer];
+                if ([galaxySublayer hitTest:point2]) {
+                    LevelSelectionViewController *levelSelectionViewController = [[LevelSelectionViewController alloc] init];
+                    [self prepareForViewTransition:levelSelectionViewController];
+                    [self presentViewController:levelSelectionViewController animated:YES completion:nil];
+                    //galaxySublayer.opacity = 0.3; // Just a quick way to check that the icon has actually been clicked
+                }
             }
-            if ([solarSystemLayer hitTest:point2]) {
-                NSLog(@"solarsystem hit point");
-            }
-            solarSystemLayer.opacity = 0.5;
         }
     }
-
 }
+
+// Prepare for segue analog for passing data to subview
+- (void)prepareForViewTransition:(LevelSelectionViewController *)levelSelectionViewController
+{
+    // Read in levels from file and pass to levelSelectionViewController
+    LevelInterpreter *levelInterpreter = [[LevelInterpreter alloc] init];
+    NSInteger numberOfLevels = [levelInterpreter numberOfLevels];
+    levelSelectionViewController.numberOfLevels = numberOfLevels;
+}
+
+
+
 
 # pragma mark - Default code blocks
 

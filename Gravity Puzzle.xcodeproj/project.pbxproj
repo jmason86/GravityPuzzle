@@ -49,6 +49,7 @@
 		E44BCC6C17DE4928006133BF /* button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E44BCC6917DE4928006133BF /* button_normal.png */; };
 		E44BCC6D17DE4928006133BF /* button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = E44BCC6A17DE4928006133BF /* button_pressed.png */; };
 		E44BCC6E17DE4928006133BF /* mute_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E44BCC6B17DE4928006133BF /* mute_button.png */; };
+		E44EB31A180EFA2F00CBD58D /* LevelSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44EB319180EFA2F00CBD58D /* LevelSelectionViewController.m */; };
 		E49F102417CF26EF0094540F /* NewGalaxy_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E49F102317CF26EF0094540F /* NewGalaxy_Placeholder.jpg */; };
 		E49F102917CF28330094540F /* Level5.txt in Resources */ = {isa = PBXBuildFile; fileRef = E49F102517CF28330094540F /* Level5.txt */; };
 		E49F102A17CF28330094540F /* Level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = E49F102617CF28330094540F /* Level4.txt */; };
@@ -115,6 +116,8 @@
 		E44BCC6917DE4928006133BF /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_normal.png; sourceTree = "<group>"; };
 		E44BCC6A17DE4928006133BF /* button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_pressed.png; sourceTree = "<group>"; };
 		E44BCC6B17DE4928006133BF /* mute_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute_button.png; sourceTree = "<group>"; };
+		E44EB318180EFA2F00CBD58D /* LevelSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectionViewController.h; sourceTree = "<group>"; };
+		E44EB319180EFA2F00CBD58D /* LevelSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectionViewController.m; sourceTree = "<group>"; };
 		E49F102317CF26EF0094540F /* NewGalaxy_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewGalaxy_Placeholder.jpg; sourceTree = "<group>"; };
 		E49F102517CF28330094540F /* Level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level5.txt; sourceTree = "<group>"; };
 		E49F102617CF28330094540F /* Level4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level4.txt; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				E4DB33DA17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld */,
 				E4DB33EB17C13F3900DA81B7 /* HomeViewController.h */,
 				E4DB33EC17C13F3900DA81B7 /* HomeViewController.m */,
+				E44EB318180EFA2F00CBD58D /* LevelSelectionViewController.h */,
+				E44EB319180EFA2F00CBD58D /* LevelSelectionViewController.m */,
 				E4DB33E617C139C800DA81B7 /* LevelInterpreter.h */,
 				E4DB33E717C139C800DA81B7 /* LevelInterpreter.m */,
 				E4DB33C917C1366700DA81B7 /* Supporting Files */,
@@ -401,6 +406,7 @@
 				E4DB33D317C1366800DA81B7 /* AppDelegate.m in Sources */,
 				E4DB33DC17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld in Sources */,
 				E4DB33E817C139C800DA81B7 /* LevelInterpreter.m in Sources */,
+				E44EB31A180EFA2F00CBD58D /* LevelSelectionViewController.m in Sources */,
 				E4DB33ED17C13F3900DA81B7 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
