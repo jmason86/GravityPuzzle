@@ -47,7 +47,7 @@
         UIImageView *orbitImageView = [[UIImageView alloc] initWithImage:orbitImage];
         orbitImageView.bounds = CGRectMake(0, 0, self.view.bounds.size.width * orbitDiameterMultiplier, self.view.bounds.size.height * orbitDiameterMultiplier);
         orbitImageView.center = self.view.center;
-        [self.view addSubview:orbitImageView];
+        [self.view addSubview:orbitImageView];
         orbitDiameterMultiplier -= 0.1;
     }
 }
