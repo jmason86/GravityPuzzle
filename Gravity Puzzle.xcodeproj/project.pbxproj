@@ -316,6 +316,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Trinary;
+				TargetAttributes = {
+					E4DB33BC17C1366700DA81B7 = {
+						DevelopmentTeam = Y3EC579VUK;
+					};
+				};
 			};
 			buildConfigurationList = E4DB33B817C1366700DA81B7 /* Build configuration list for PBXProject "Gravity Puzzle" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -486,10 +491,13 @@
 		E4DB33E017C1366800DA81B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gravity Puzzle/Gravity Puzzle-Prefix.pch";
 				INFOPLIST_FILE = "Gravity Puzzle/Gravity Puzzle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -497,10 +505,13 @@
 		E4DB33E117C1366800DA81B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gravity Puzzle/Gravity Puzzle-Prefix.pch";
 				INFOPLIST_FILE = "Gravity Puzzle/Gravity Puzzle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

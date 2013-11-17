@@ -83,7 +83,7 @@
     gameTitleLabel.textColor = [UIColor whiteColor];
     gameTitleLabel.backgroundColor = [UIColor clearColor];
     gameTitleLabel.textAlignment = NSTextAlignmentCenter;
-    gameTitleLabel.center = CGPointMake(240, 20);
+    gameTitleLabel.center = CGPointMake(280, 20);
     [self.view addSubview:gameTitleLabel];
     
     // Create settings button
