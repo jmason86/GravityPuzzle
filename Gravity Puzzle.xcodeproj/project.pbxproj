@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E443E54317CC6F3F00B754F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E443E54217CC6F3F00B754F7 /* QuartzCore.framework */; };
+		E4447386184093080027E1EC /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4447385184093080027E1EC /* LevelViewController.m */; };
+		E44473891840978B0027E1EC /* LeftSidePanel.png in Resources */ = {isa = PBXBuildFile; fileRef = E44473881840978B0027E1EC /* LeftSidePanel.png */; };
+		E444738B184097950027E1EC /* RightSidePanel.png in Resources */ = {isa = PBXBuildFile; fileRef = E444738A184097950027E1EC /* RightSidePanel.png */; };
 		E44AAC3D17C5BC0500F6656B /* Asteroid_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */; };
 		E44AAC3E17C5BC0500F6656B /* BackButton_Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */; };
 		E44AAC3F17C5BC0500F6656B /* BlackHole_Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */; };
@@ -75,6 +78,10 @@
 
 /* Begin PBXFileReference section */
 		E443E54217CC6F3F00B754F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E4447384184093080027E1EC /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		E4447385184093080027E1EC /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
+		E44473881840978B0027E1EC /* LeftSidePanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftSidePanel.png; sourceTree = "<group>"; };
+		E444738A184097950027E1EC /* RightSidePanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightSidePanel.png; sourceTree = "<group>"; };
 		E44AAC1617C5BC0500F6656B /* Asteroid_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asteroid_Placeholder.png; sourceTree = "<group>"; };
 		E44AAC1717C5BC0500F6656B /* BackButton_Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton_Placeholder.png; sourceTree = "<group>"; };
 		E44AAC1817C5BC0500F6656B /* BlackHole_Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlackHole_Placeholder.jpg; sourceTree = "<group>"; };
@@ -163,6 +170,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4447387184093380027E1EC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB33E217C1376500DA81B7 /* MainStoryboard_iPhone.storyboard */,
+				E4DB33E417C1377600DA81B7 /* MainStoryboard_iPad.storyboard */,
+				E4DB33EB17C13F3900DA81B7 /* HomeViewController.h */,
+				E4DB33EC17C13F3900DA81B7 /* HomeViewController.m */,
+				E44EB318180EFA2F00CBD58D /* LevelSelectionViewController.h */,
+				E44EB319180EFA2F00CBD58D /* LevelSelectionViewController.m */,
+				E4447384184093080027E1EC /* LevelViewController.h */,
+				E4447385184093080027E1EC /* LevelViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		E44AAC1517C5BC0500F6656B /* Placeholders */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 				E44AAC1E17C5BC0500F6656B /* ForceField_Placeholder.png */,
 				E44AAC2017C5BC0500F6656B /* GravityWell_Placeholder.png */,
 				E44AAC2117C5BC0500F6656B /* InfoButton_Placeholder.png */,
+				E44473881840978B0027E1EC /* LeftSidePanel.png */,
 				E44AAC2217C5BC0500F6656B /* LevelBubble_Placeholder.png */,
 				E44AAC2317C5BC0500F6656B /* LevelBubble_Placeholder.pxm */,
 				E44AAC2417C5BC0500F6656B /* LockSymbol_Placeholder.png */,
@@ -200,6 +223,7 @@
 				E44AAC3217C5BC0500F6656B /* SpaceStation_Placeholder.png */,
 				E44AAC3317C5BC0500F6656B /* SpeakerButton_Placeholder.png */,
 				E44AAC3417C5BC0500F6656B /* StarEmpty_Placeholder.png */,
+				E444738A184097950027E1EC /* RightSidePanel.png */,
 				E44AAC3517C5BC0500F6656B /* StarFieldBackground2_Placeholder.jpg */,
 				E44AAC3617C5BC0500F6656B /* StarFieldBackground_Placeholder.jpg */,
 				E44AAC3717C5BC0500F6656B /* StarFilled_Placeholder.png */,
@@ -244,13 +268,8 @@
 		E4DB33C817C1366700DA81B7 /* Gravity Puzzle */ = {
 			isa = PBXGroup;
 			children = (
-				E4DB33E217C1376500DA81B7 /* MainStoryboard_iPhone.storyboard */,
-				E4DB33E417C1377600DA81B7 /* MainStoryboard_iPad.storyboard */,
+				E4447387184093380027E1EC /* View Controllers */,
 				E4DB33DA17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld */,
-				E4DB33EB17C13F3900DA81B7 /* HomeViewController.h */,
-				E4DB33EC17C13F3900DA81B7 /* HomeViewController.m */,
-				E44EB318180EFA2F00CBD58D /* LevelSelectionViewController.h */,
-				E44EB319180EFA2F00CBD58D /* LevelSelectionViewController.m */,
 				E4DB33E617C139C800DA81B7 /* LevelInterpreter.h */,
 				E4DB33E717C139C800DA81B7 /* LevelInterpreter.m */,
 				E4DB33C917C1366700DA81B7 /* Supporting Files */,
@@ -386,6 +405,7 @@
 				E44AAC5E17C5BC0500F6656B /* StarFilled_Placeholder.png in Resources */,
 				E44AAC5F17C5BC0500F6656B /* Sun_Placeholder.png in Resources */,
 				E44AAC6017C5BC0500F6656B /* UFOEnemy_Placeholder.png in Resources */,
+				E44473891840978B0027E1EC /* LeftSidePanel.png in Resources */,
 				E44AAC6117C5BC0500F6656B /* Wormhole_Placeholder.pxm in Resources */,
 				E44AAC6217C5BC0500F6656B /* WormholeBlue_Placeholder.png in Resources */,
 				E44AAC6317C5BC0500F6656B /* WormholeRed_Placeholder.png in Resources */,
@@ -394,6 +414,7 @@
 				E49F102A17CF28330094540F /* Level4.txt in Resources */,
 				E49F102B17CF28330094540F /* Level3.txt in Resources */,
 				E49F102C17CF28330094540F /* Level2.txt in Resources */,
+				E444738B184097950027E1EC /* RightSidePanel.png in Resources */,
 				E44BCC6C17DE4928006133BF /* button_normal.png in Resources */,
 				E44BCC6D17DE4928006133BF /* button_pressed.png in Resources */,
 				E44BCC6E17DE4928006133BF /* mute_button.png in Resources */,
@@ -408,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DB33CF17C1366800DA81B7 /* main.m in Sources */,
+				E4447386184093080027E1EC /* LevelViewController.m in Sources */,
 				E4DB33D317C1366800DA81B7 /* AppDelegate.m in Sources */,
 				E4DB33DC17C1366800DA81B7 /* Gravity_Puzzle.xcdatamodeld in Sources */,
 				E4DB33E817C139C800DA81B7 /* LevelInterpreter.m in Sources */,

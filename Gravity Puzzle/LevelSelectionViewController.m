@@ -8,6 +8,7 @@
 
 #import "LevelSelectionViewController.h"
 #import "LevelInterpreter.h"
+#import "LevelViewController.h"
 
 @interface LevelSelectionViewController ()
 
@@ -89,6 +90,9 @@
 {
     //LevelInterpreter *levelInterpreter = [[LevelInterpreter alloc] init];
     //NSArray *levelData = [levelInterpreter loadLevelFileFromDisk:(NSInteger)1]; // TODO: Change this from 1 to whatever is most relevant, then pass info to levelViewController
+    
+    LevelViewController *levelViewController = [[LevelViewController alloc] init];
+    [self presentViewController:levelViewController animated:YES completion:nil];
 }
 
 @end
